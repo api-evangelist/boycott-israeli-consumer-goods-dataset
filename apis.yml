@@ -12,9 +12,9 @@ apis:
       - url: ' https://github.com/TechForPalestine/boycott-israeli-consumer-goods-dataset?tab=readme-ov-file'
         type: Documentation
     description: >-
-      Collating all consumer boycott and alternatives data into a single,
-      golden-source, version-controlled repository. This can be consumed by
-      software products and services. 
+      Collating all consumer boycott and alternatives data into a single, golden-source,
+      version-controlled repository. This can be consumed by software products and
+      services.
 name: Boycott Israeli Consumer Goods Dataset
 tags:
   - Boycotts
@@ -28,9 +28,8 @@ created: '2024-11-14'
 modified: '2024-12-22'
 position: Consumer
 description: >-
-  Collating all consumer boycott and alternatives data into a single,
-  golden-source, version-controlled repository. This can be consumed by software
-  products and services. 
+  Collating all consumer boycott and alternatives data into a single, golden-source,
+  version-controlled repository. This can be consumed by software products and services.
 maintainers:
   - FN: Kin Lane
     email: info@apievangelist.com
