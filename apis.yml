@@ -5,8 +5,7 @@ apis:
   - aid: >-
       boycott-israeli-consumer-goods-dataset:boycott-israeli-consumer-goods-dataset
     name: Boycott Israeli Consumer Goods Dataset
-    tags:
-      - API
+    tags: []
     humanURL: ' https://github.com/TechForPalestine/boycott-israeli-consumer-goods-dataset?tab=readme-ov-file'
     properties:
       - url: ' https://github.com/TechForPalestine/boycott-israeli-consumer-goods-dataset?tab=readme-ov-file'
@@ -18,9 +17,9 @@ apis:
 name: Boycott Israeli Consumer Goods Dataset
 tags:
   - Boycotts
-  - Israeli
   - Consumers
   - Datasets
+  - Israeli
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
