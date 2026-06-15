@@ -1,0 +1,228 @@
+{
+  "item": [
+    {
+      "id": "03de9175-8eb9-404e-a9d2-744dd1eadcd8",
+      "name": "Dataset",
+      "description": {
+        "content": "Static dataset files served from the project's main branch.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "c1c72285-2679-4a22-8621-3735fd657daf",
+          "name": "Get the full brands dataset as JSON",
+          "request": {
+            "name": "Get the full brands dataset as JSON",
+            "description": {
+              "content": "Returns the aggregated boycott brands dataset.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "output",
+                "brands.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4ed4d3ca-df79-4b20-81bc-9b3bd6e73210",
+              "name": "Brands dataset",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "output",
+                    "brands.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"key_0\": 2066.5808080277616\n  },\n  {\n    \"key_0\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9983572b-4758-47e5-8679-ab59dded7554",
+          "name": "Browse JSON output directory listing on GitHub",
+          "request": {
+            "name": "Browse JSON output directory listing on GitHub",
+            "description": {
+              "content": "The repository's `output/json/` directory contains generated JSON files\nper category and aggregate.\n",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "output",
+                "json",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7a17be29-94ab-41ae-b176-5e15197d7687",
+              "name": "Directory listing (served by GitHub web UI)",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "output",
+                    "json",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8ceebc65-4d10-4b56-856d-2af943b33f25",
+          "name": "Browse CSV output directory listing on GitHub",
+          "request": {
+            "name": "Browse CSV output directory listing on GitHub",
+            "description": {
+              "content": "The repository's `output/csv/` directory contains generated CSV files\nper category and aggregate.\n",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "output",
+                "csv",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "aada43e6-5d00-417c-80d2-4608a8f21236",
+              "name": "Directory listing (served by GitHub web UI)",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "output",
+                    "csv",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://raw.githubusercontent.com/TechForPalestine/boycott-israeli-consumer-goods-dataset/main",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "bf503448-66cf-47c9-9a13-0d867195508d",
+    "name": "Boycott Israeli Consumer Goods Dataset",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Public, version-controlled dataset maintained by TechForPalestine collating\nconsumer boycott and alternative product data. The dataset is published as\nstatic JSON and CSV files in the project's GitHub repository and is consumed\ndirectly over HTTPS — there is no dynamic API, but the raw file URLs are\nstable, public endpoints that downstream products integrate with.\n\n\nContact Support:\n Name: Tech for Palestine",
+      "type": "text/plain"
+    }
+  }
+}

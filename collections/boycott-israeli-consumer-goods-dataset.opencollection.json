@@ -1,0 +1,51 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Boycott Israeli Consumer Goods Dataset",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Dataset",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get the full brands dataset as JSON",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://raw.githubusercontent.com/TechForPalestine/boycott-israeli-consumer-goods-dataset/main/output/brands.json"
+          },
+          "docs": "Returns the aggregated boycott brands dataset."
+        },
+        {
+          "info": {
+            "name": "Browse JSON output directory listing on GitHub",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://raw.githubusercontent.com/TechForPalestine/boycott-israeli-consumer-goods-dataset/main/output/json/"
+          },
+          "docs": "The repository's `output/json/` directory contains generated JSON files\nper category and aggregate.\n"
+        },
+        {
+          "info": {
+            "name": "Browse CSV output directory listing on GitHub",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://raw.githubusercontent.com/TechForPalestine/boycott-israeli-consumer-goods-dataset/main/output/csv/"
+          },
+          "docs": "The repository's `output/csv/` directory contains generated CSV files\nper category and aggregate.\n"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
