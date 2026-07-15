@@ -44,6 +44,8 @@ apis:
       version-controlled repository consumable by software products and services.
       Data sourced from Who Profits Research Center, BDS Movement, and AFSC.
 common:
+  - type: AgenticAccess
+    url: agentic-access/boycott-israeli-consumer-goods-dataset-agentic-access.yml
   - type: Website
     url: https://github.com/TechForPalestine/boycott-israeli-consumer-goods-dataset
   - type: Organization
