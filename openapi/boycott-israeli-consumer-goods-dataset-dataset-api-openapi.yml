@@ -1,30 +1,36 @@
 openapi: 3.1.0
 info:
-  title: Boycott Israeli Consumer Goods Dataset
-  description: |
-    Public, version-controlled dataset maintained by TechForPalestine collating
+  title: Boycott Israeli Consumer Goods Dataset API
+  description: 'Public, version-controlled dataset maintained by TechForPalestine collating
+
     consumer boycott and alternative product data. The dataset is published as
-    static JSON and CSV files in the project's GitHub repository and is consumed
+
+    static JSON and CSV files in the project''s GitHub repository and is consumed
+
     directly over HTTPS — there is no dynamic API, but the raw file URLs are
+
     stable, public endpoints that downstream products integrate with.
-  version: "1.0.0"
+
+    '
+  version: 1.0.0
   contact:
     name: Tech for Palestine
     url: https://github.com/TechForPalestine/boycott-israeli-consumer-goods-dataset
 servers:
-  - url: https://raw.githubusercontent.com/TechForPalestine/boycott-israeli-consumer-goods-dataset/main
-    description: Raw GitHub content for the main branch
+- url: https://raw.githubusercontent.com/TechForPalestine/boycott-israeli-consumer-goods-dataset/main
+  description: Raw GitHub content for the main branch
 security: []
 tags:
-  - name: Dataset
-    description: Static dataset files served from the project's main branch.
+- name: Dataset
+  description: Static dataset files served from the project's main branch.
 paths:
   /output/brands.json:
     get:
       operationId: getBrandsJson
       summary: Get the full brands dataset as JSON
       description: Returns the aggregated boycott brands dataset.
-      tags: [Dataset]
+      tags:
+      - Dataset
       responses:
         '200':
           description: Brands dataset
@@ -39,10 +45,13 @@ paths:
     get:
       operationId: listJsonOutputs
       summary: Browse JSON output directory listing on GitHub
-      description: |
-        The repository's `output/json/` directory contains generated JSON files
+      description: 'The repository''s `output/json/` directory contains generated JSON files
+
         per category and aggregate.
-      tags: [Dataset]
+
+        '
+      tags:
+      - Dataset
       responses:
         '200':
           description: Directory listing (served by GitHub web UI)
@@ -50,10 +59,13 @@ paths:
     get:
       operationId: listCsvOutputs
       summary: Browse CSV output directory listing on GitHub
-      description: |
-        The repository's `output/csv/` directory contains generated CSV files
+      description: 'The repository''s `output/csv/` directory contains generated CSV files
+
         per category and aggregate.
-      tags: [Dataset]
+
+        '
+      tags:
+      - Dataset
       responses:
         '200':
           description: Directory listing (served by GitHub web UI)
