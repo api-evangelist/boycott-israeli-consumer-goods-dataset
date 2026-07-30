@@ -11,7 +11,19 @@ tags:
   - YAML
 type: Index
 kind: topic
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/boycott-israeli-consumer-goods-dataset.png
 access: 3rd-Party
 created: '2024-11-14'
 modified: '2026-04-21'
@@ -25,24 +37,35 @@ description: >-
   YAML and exported in CSV and JSON formats for integration into software products
   and services.
 apis:
-  - aid: boycott-israeli-consumer-goods-dataset:boycott-israeli-consumer-goods-dataset
-    name: Boycott Israeli Consumer Goods Dataset
-    tags:
-      - Boycotts
-      - Consumers
-      - Datasets
-      - Palestine
-      - BDS
-    humanURL: https://github.com/TechForPalestine/boycott-israeli-consumer-goods-dataset
-    properties:
-      - url: https://github.com/TechForPalestine/boycott-israeli-consumer-goods-dataset
-        type: Documentation
-      - url: https://raw.githubusercontent.com/TechForPalestine/boycott-israeli-consumer-goods-dataset/main/output/brands.json
-        type: DataFeed
-    description: >-
-      Collating all consumer boycott and alternatives data into a single, golden-source,
-      version-controlled repository consumable by software products and services.
-      Data sourced from Who Profits Research Center, BDS Movement, and AFSC.
+- aid: boycott-israeli-consumer-goods-dataset:boycott-israeli-consumer-goods-dataset
+  name: Boycott Israeli Consumer Goods Dataset
+  tags:
+  - Boycotts
+  - Consumers
+  - Datasets
+  - Palestine
+  - BDS
+  humanURL: https://github.com/TechForPalestine/boycott-israeli-consumer-goods-dataset
+  properties:
+  - url: https://github.com/TechForPalestine/boycott-israeli-consumer-goods-dataset
+    type: Documentation
+  - url: >-
+      https://raw.githubusercontent.com/TechForPalestine/boycott-israeli-consumer-goods-dataset/main/output/brands.json
+    type: DataFeed
+  description: >-
+    Collating all consumer boycott and alternatives data into a single, golden-source, version-controlled
+    repository consumable by software products and services. Data sourced from Who Profits Research Center,
+    BDS Movement, and AFSC.
+- aid: >-
+    boycott-israeli-consumer-goods-dataset:boycott-israeli-consumer-goods-dataset-dataset-api
+  name: Boycott Israeli Consumer Goods Dataset Dataset API
+  description: Static dataset files served from the project's main branch.
+  humanURL: https://github.com/TechForPalestine/boycott-israeli-consumer-goods-dataset
+  tags:
+  - Dataset
+  properties:
+  - type: OpenAPI
+    url: openapi/boycott-israeli-consumer-goods-dataset-dataset-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/boycott-israeli-consumer-goods-dataset-agentic-access.yml
