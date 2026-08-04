@@ -1,0 +1,14 @@
+{
+  "provider": "boycott-israeli-consumer-goods-dataset",
+  "sources": [
+    "boycott-israeli-consumer-goods-dataset-dataset-api-openapi.yml"
+  ],
+  "outputs": [
+    "boycott-israeli-consumer-goods-dataset-dataset-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
