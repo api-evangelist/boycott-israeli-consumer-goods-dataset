@@ -38,7 +38,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/boycott-is
 access: 3rd-Party
 created: '2024-11-14'
 modified: '2026-04-21'
-position: Consumer
+position: Consuming
 description: >-
   The Boycott Israeli Consumer Goods Dataset, maintained by TechForPalestine, is a
   version-controlled, golden-source repository collating consumer boycott and
