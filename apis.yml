@@ -67,6 +67,8 @@ apis:
   description: Static dataset files served from the project's main branch.
   humanURL: https://github.com/TechForPalestine/boycott-israeli-consumer-goods-dataset
   tags:
+  - Datasets
+  tags_raw:
   - Dataset
   properties:
   - type: OpenAPI
