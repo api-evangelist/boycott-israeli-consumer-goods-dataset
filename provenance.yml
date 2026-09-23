@@ -21,9 +21,12 @@ artifacts:
   finops/boycott-israeli-consumer-goods-dataset-finops.yml:
     method: generated
     evidence: declared in the artifact
+  openapi/_original/boycott-israeli-consumer-goods-dataset-openapi.yml:
+    method: harvested
+    evidence: fetched from the provider as-is; byte-identical to the source
   openapi/boycott-israeli-consumer-goods-dataset-dataset-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   plans/boycott-israeli-consumer-goods-dataset-plans-pricing.yml:
     method: generated
     evidence: declared in the artifact
